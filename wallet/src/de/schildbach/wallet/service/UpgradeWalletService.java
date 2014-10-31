@@ -86,7 +86,7 @@ public final class UpgradeWalletService extends IntentService
 	{
 		try
 		{
-			wallet.doMaintenance(null, false);
+			//wallet.doMaintenance(null, false);
 
 			// let other service pre-generate look-ahead keys
 			application.startBlockchainService(false);

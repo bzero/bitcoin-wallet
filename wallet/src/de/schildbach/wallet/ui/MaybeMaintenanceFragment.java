@@ -114,8 +114,9 @@ public class MaybeMaintenanceFragment extends Fragment
 	{
 		try
 		{
-			final ListenableFuture<List<Transaction>> result = wallet.doMaintenance(null, false);
-			return !result.get().isEmpty();
+			//final ListenableFuture<List<Transaction>> result = wallet.doMaintenance(null, false);
+			//return !result.get().isEmpty();
+			return false;
 		}
 		catch (final DeterministicUpgradeRequiresPassword x)
 		{

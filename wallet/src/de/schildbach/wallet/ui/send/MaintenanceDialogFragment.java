@@ -256,7 +256,7 @@ public class MaintenanceDialogFragment extends DialogFragment
 			{
 				try
 				{
-					wallet.doMaintenance(encryptionKey, true);
+					//wallet.doMaintenance(encryptionKey, true);
 
 					handler.post(new Runnable()
 					{
@@ -340,8 +340,9 @@ public class MaintenanceDialogFragment extends DialogFragment
 	{
 		try
 		{
-			final ListenableFuture<List<Transaction>> result = wallet.doMaintenance(null, false);
-			return result.get();
+			//final ListenableFuture<List<Transaction>> result = wallet.doMaintenance(null, false);
+			//return result.get();
+			return Collections.emptyList();
 		}
 		catch (final DeterministicUpgradeRequiresPassword x)
 		{
